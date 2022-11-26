@@ -1,0 +1,28 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} !=localhost
+RewriteCond %{HTTP_HOST} !=127.0.0.1
+RewriteCond %{REMOTE_ADDR} !=127.0.0.1
+RewriteCond %{REMOTE_ADDR} !=::1
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(.*)/index\.php [NC]
+RewriteRule ^ $1 [R=302,L]
+
+ErrorDocument 404 /notfound.php
+
+
+#######activate below code after edit
+#######Options +FollowSymLinks -MultiViews
+#######RewriteEngine On
+#######RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
+#######RewriteCond %{HTTP:X-Forwarded-Proto} =""
+#######RewriteCond %{HTTPS} !=on
+#######RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#######RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(.*)/index\.php [NC]
+#######RewriteRule ^ $1 [R=301,L]
+#######ErrorDocument 404 /ht404.php

@@ -1,0 +1,68 @@
+/**
+ * Noty 2.2.2 Theme: Flat UI colors
+ * @author kottenator
+ * @edited by 
+ */
+.noty_message{text-align:right !important}
+.flat .noty_bar {
+    text-align: center;
+    padding: 12px 15px 13px;
+    position: relative;
+    border: 2px solid #eee;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.flat:first-child .noty_bar {
+    border-top-width: 2px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+#noty_top_layout_container .flat:first-child .noty_bar {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.flat:last-child .noty_bar {
+    border-bottom-width: 2px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#noty_bottom_layout_container .flat:last-child .noty_bar {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.flat .noty_bar.noty_type_error {
+    background-color: #f55145;
+    border-color: #c0392b;
+    color: #fff;
+}
+.flat .noty_bar.noty_type_warning {
+    background-color: #fbc53c;
+    border-color: #f39c12;
+    color: #fff;
+}
+.flat .noty_bar.noty_type_success {
+    background-color: #8cc63f;
+    border-color: #27ae60;
+    color: #fff;
+}
+.flat .noty_bar.noty_type_information {
+    background-color: #14B9D6;
+    border-color: #2d95c5;
+    color: #fff;
+}
+.flat.noty_container_type_alert + .flat.noty_container_type_alert,
+.flat.noty_container_type_error + .flat.noty_container_type_error,
+.flat.noty_container_type_warning + .flat.noty_container_type_warning,
+.flat.noty_container_type_success + .flat.noty_container_type_success,
+.flat.noty_container_type_information + .flat.noty_container_type_information,
+.flat.noty_container_type_confirm + .flat.noty_container_type_confirm {
+    margin-top: -2px;
+}
+.noty_buttons .btn{
+    margin:5px;
+    min-width: 80px;
+}

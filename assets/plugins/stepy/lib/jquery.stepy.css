@@ -1,0 +1,30 @@
+.stepy-header {list-style: none;padding: 0;text-align: right;}
+.stepy-header li {cursor: pointer;float: right;padding: 10px;font-size: 15px;}
+.stepy-header li.stepy-error { background: #ff3333 }
+.stepy-header li div { color: #CCC; text-shadow: 1px 1px #F8F8F8 }
+.stepy-header li.stepy-active div { color: #555; cursor: auto }
+.stepy-header li span { color: #CCC}
+.stepy-header li.stepy-active span { color: #BBB }
+
+.stepy-step {clear: left;padding: 10px 0;width: 100%;-khtml-border-radius: 3px;-moz-border-radius: 3px;-opera-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+.stepy-step legend {color: #888888;padding: 0 2px 3px;margin-bottom: 0;}
+.stepy-step label { color: #222; display: block; margin: 10px 0 3px 1px }
+
+.stepy-step input,
+.stepy-step textarea,
+.stepy-step select {color: #333;padding: 3px; width: 90% }
+
+.stepy-step select { height: 34px; padding-top: 5px }
+
+.stepy-step textarea { height: 100px }
+
+.stepy-navigator { height: 33px; margin-top: 20px }
+.button-back {float: right;}
+
+.button-next,
+.stepy-navigator input[type="submit"] {float: left;}
+
+.button-back,
+.button-next,
+.stepy-navigator input[type="submit"] {min-width:80px; text-decoration: none}
+.stepy-finish{float:left}

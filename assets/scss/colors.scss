@@ -1,0 +1,70 @@
+/*@import "etc.scss";*/
+$sidebarColor : #212529;
+$bgColor : #f5f5f5;
+
+
+/*--------------------- General Color Start ----------------------*/
+body, #page-content{
+    background: $bgColor;
+}
+#wrapper, #sidebar, .metismenu {
+    background: $sidebarColor;
+}
+/*---------------------- General Color End -----------------------*/
+
+
+
+@mixin printColors($colorName, $color){
+/*--------------------- Start #{$colorName} ----------------------*/
+    .theme-#{$colorName}.sidebar-collapse .metismenu li.conditional-bg>a{
+        background: $color;
+        color: #fff;
+    }
+    .theme-#{$colorName}{ 
+        .spinner{    
+            border: 3px solid $color;
+            border-left: 3px solid #ccc;
+        }
+        .grid-example{
+            border: 1px solid $color;
+        }
+        .double-bounce1, .double-bounce2, .scaleout, .bounces>div, .folding-cube .cube:before,
+        .header-right,
+        .metismenu a.current, .metismenu a:hover, .metismenu a:focus, .metismenu a:active {
+            background: $color;
+        }
+        .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+            background-color: $color;
+            border-color: $color;
+        }
+    }
+    .bg-#{$colorName},
+    .btn-#{$colorName}{
+        background: $color;
+    }
+/*---------------------- End #{$colorName} -----------------------*/
+}
+
+
+$blueColor : #14B9D6;
+$redColor : #f55145;
+$greenColor : #53a96b;
+$orangeColor : #ffbd15;
+$purpleColor : #c450d8;
+$deepOrangeColor : #ff8a65;
+$roseColor : #e91e63;
+$cyanColor : #13a2a6;
+$limeColor : #90ca4b;
+$darkOrangeColor : #ee7825;
+
+
+@include printColors('blue', $blueColor);
+@include printColors('red', $redColor);
+@include printColors('green', $greenColor);
+@include printColors('orange', $orangeColor);
+@include printColors('purple', $purpleColor);
+@include printColors('deeporange', $deepOrangeColor);
+@include printColors('rose', $roseColor);
+@include printColors('cyan', $cyanColor);
+@include printColors('lime', $limeColor);
+@include printColors('darkorange', $darkOrangeColor);

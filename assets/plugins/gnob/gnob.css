@@ -1,0 +1,169 @@
+.gnob,
+.gnob .inner {
+  border-radius: 100px;
+  cursor: default;
+}
+
+.gnob {
+  border: 1px solid #0D0D0D;
+  display: flex;
+  align-items: center;
+  background: black;
+  position: relative;
+}
+
+.gnob .inner {
+  background: linear-gradient(40deg, #000000, #282828);
+  margin: 0 auto;
+}
+
+.gnob .indicator {
+  background: #E8E15A;
+  box-shadow: 0px 0px 8px #E8E15A;
+  border: 1px solid #333333;
+  position: absolute;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.gnob.small, .gnob.small .inner {
+  height: 25px;
+  width: 25px;
+}
+
+.gnob.small .indicator {
+  right: 5px;
+  top: 3px;
+  height: 3px;
+  width: 3px;
+}
+
+.gnob.medium, .gnob.medium .inner {
+  height: 55px;
+  width: 55px;
+}
+
+.gnob.medium .indicator {
+  left: 35px;
+  top: 10px;
+  height: 5px;
+  width: 5px;
+}
+
+.gnob.large, .gnob.large .inner {
+  height: 100px;
+  width: 100px;
+}
+
+.gnob.large .indicator {
+  right: 15px;
+  top: 15px;
+  height: 10px;
+  width: 10px;
+}
+
+.gnob.small  .popover {
+  left: -23px;
+  bottom: 36px;
+}
+
+.gnob.medium  .popover {
+  left: -9px;
+  bottom: 66px;
+}
+
+.gnob.large  .popover {
+  left: 15px;
+  bottom: 110px;
+}
+
+.popover {
+  display: none;
+  background-color: rgba(0,0,0,0.85);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Helvetica',sans-serif;
+  padding: 7px 10px;
+  position: absolute;
+  z-index: 4;
+}
+
+.popover input[type='text'] {
+  border: none;
+  outline: none;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  width: 50px;
+}
+
+.popover input[type='text'] {
+  width: 35px;
+  border: none;
+  outline: none;
+  background: rgba(0,0,0,0.85);
+  color: white;
+}
+
+.large .popover.right {
+  bottom: 35px;
+  left: 110px;
+}
+
+.large .popover.left {
+  bottom: 35px;
+  left: -70px;
+}
+
+.medium .popover.right {
+  bottom: 13px;
+  left: 65px;
+}
+
+.medium .popover.left {
+  bottom: 13px;
+  left: -67px;
+}
+
+.small .popover.right {
+  bottom: 0;
+  left: 35px;
+}
+
+.small .popover.left {
+  bottom: 0;
+  left: -67px;
+}
+
+.popover.right::before {
+  bottom: -7px;
+  margin-left: -7px;
+  bottom: 10px;
+  left: -3px;
+  transform: rotate(90deg);
+}
+
+.popover.left::before {
+  margin-left: -7px;
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
+  transform: rotate(270deg);
+}
+.popover::before {
+  border-top: 7px solid rgba(0,0,0,0.85);
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  bottom: -7px;
+  content: '';
+  display: block;
+  left: 50%;
+  margin-left: -7px;
+  position: absolute;
+}
+
+.popover.open, .popover.open::before {
+  display: block;
+}
+

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/yekan/WebYekan.eot');
+    src: url('../fonts/yekan/WebYekan.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/yekan/WebYekan.woff') format('woff'),
+        url('../fonts/yekan/WebYekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, input, select, .popover, .swal2-content, .swal2-buttonswrapper button, .amcharts-chart-div *, .morris-chart *, .morris-hover.morris-default-style{
+    font-family: Yekan, Tahoma !important;
+}
+h1, .h1{font: 16pt Yekan}
+h2, .h2{font: 14pt Yekan}
+h3, .h3{font: 13pt Yekan}
+h4, .h4{font: 12pt Yekan}
+h5, .h5{font: 10.5pt Yekan}
+h6, .h6{font: 9.5pt Yekan}
+.tooltip-inner{font: 12px Yekan}
+.btn-icon.btn-sm{line-height: 30px}

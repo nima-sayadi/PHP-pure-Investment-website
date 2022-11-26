@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Parastoo;
+    src: url('../fonts/parastoo/Parastoo.eot');
+    src: url('../fonts/parastoo/Parastoo.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/parastoo/Parastoo.woff') format('woff'),
+        url('../fonts/parastoo/Parastoo.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Parastoo;
+    src: url('../fonts/parastoo/Parastoo-Bold.eot');
+    src: url('../fonts/parastoo/Parastoo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/parastoo/Parastoo-Bold.woff') format('woff'),
+        url('../fonts/parastoo/Parastoo-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+body, input, select, .popover, .swal2-content, .swal2-buttonswrapper button, .amcharts-chart-div *, .morris-chart *, .morris-hover.morris-default-style{
+    font-family: Parastoo, Tahoma !important;
+    font-size: 12px;
+}
+h1, .h1{font: 15pt Parastoo}
+h2, .h2{font: 13pt Parastoo}
+h3, .h3{font: 12pt Parastoo}
+h4, .h4{font: 11pt Parastoo}
+h5, .h5{font: 10pt Parastoo}
+h6, .h6{font: 9pt Parastoo}
+.tooltip-inner{font: 10px Parastoo}
