@@ -61,21 +61,6 @@ CREATE TABLE `notifications` (
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `notifications`
---
-
-INSERT INTO `notifications` (`from_who`, `to_who`, `short_msg`, `msg`, `status`, `id`) VALUES
-('سیستم', 'admins', 'شما یک درخواست <strong style=\'color:red;\'>ثبت کیف پول</strong> از کاربر <strong>نیما صیادی</strong> دریافت کردید.', 'شما یک درخواست <strong style=\'color:red;\'>ثبت کیف پول</strong> از کاربر <strong>نیما صیادی</strong> دریافت کردید.', 'seen', 3),
-('سیستم', 'admins', 'شما یک درخواست <strong style=\'color:red;\'>ثبت کیف پول</strong> از کاربر <strong>نیما صیادی</strong> دریافت کردید.', 'شما یک درخواست <strong style=\'color:red;\'>ثبت کیف پول</strong> از کاربر <strong>نیما صیادی</strong> دریافت کردید.', 'seen', 4),
-('سیستم', 'admins', 'شما یک <strong>درخواست خرید</strong> از <strong>نیما صیادی</strong> دریافت کردید.', 'شما یک <strong>درخواست خرید</strong> از <strong>نیما صیادی</strong> دریافت کردید.', 'seen', 5),
-('سیستم', 'admins', 'شما یک <strong>درخواست خرید</strong> از <strong>نیما صیادی</strong> دریافت کردید.', 'شما یک <strong>درخواست خرید</strong> از <strong>نیما صیادی</strong> دریافت کردید.', 'seen', 6),
-('سیستم', 'admins', 'شما یک <strong>درخواست خرید</strong> از <strong>نیما صیادی</strong> دریافت کردید.', 'شما یک <strong>درخواست خرید</strong> از <strong>نیما صیادی</strong> دریافت کردید.', 'seen', 7),
-('سیستم', 'nimanima54@gmail.com', 'درخواست خرید شما <strong style=\'color:green;\'>تایید شد</strong>.', 'درخواست خرید شما <strong style=\'color:green;\'>تایید شد</strong>.', 'seen', 8),
-('سیستم', 'nimanima54@gmail.com', 'درخواست خرید شما <strong style=\'color:green;\'>تایید شد</strong>.', 'درخواست خرید شما <strong style=\'color:green;\'>تایید شد</strong>.', 'seen', 9),
-('سیستم', 'nimanima54@gmail.com', 'درخواست خرید شما <strong style=\'color:green;\'>تایید شد</strong>.', 'درخواست خرید شما <strong style=\'color:green;\'>تایید شد</strong>.', 'seen', 10),
-('سیستم', 'admins', 'شما یک <strong>درخواست فروش</strong> از <strong>نیما صیادی</strong> دریافت کردید.', 'شما یک <strong>درخواست فروش</strong> از <strong>نیما صیادی</strong> دریافت کردید.', 'unseen', 11),
-('سیستم', 'nimanima54@gmail.com', 'درخواست فروش شما <strong style=\'color:green;\'>تایید شد</strong>.', 'درخواست فروش شما <strong style=\'color:green;\'>تایید شد</strong>.', 'seen', 12);
 
 -- --------------------------------------------------------
 
@@ -104,14 +89,7 @@ CREATE TABLE `requests` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `requests`
 --
-
-INSERT INTO `requests` (`type`, `request_amount`, `nav`, `buy_price`, `sell_price`, `tax`, `status`, `request_date`, `confirm_date`, `wallet`, `remaining_amount`, `inbox`, `other`, `url`, `pic`, `user`, `id`) VALUES
-('خرید (صدور)', '5', '4000', '20000', NULL, '100', 'تایید شده', '1401/03/23', '1401/03/23', 'TRLvpaDKgj6LXxmmt6sSaw9VzB5cV3L7Dv', '2', 'inbox1', 'خرید در هر قیمتی', 'oip', 'wEnuzfhqHS.png', 'nimanima54@gmail.com', 9),
-('خرید (صدور)', '5', '70000', '350000', NULL, '100', 'تایید شده', '1401/03/23', '1401/03/23', 'TRLvpaDKgj6LXxmmt6sSaw9VzB5cV3L7Dv', '5', 'inbox2', 'خرید در هر قیمتی', 'سیش', 'GKRrwCoED5.png', 'nimanima54@gmail.com', 10),
-('خرید (صدور)', '2', '100000', '200000', NULL, '40', 'تایید شده', '1401/03/23', '1401/03/23', 'TRLvpaDKgj6LXxmmt6sSaw9VzB5cV3L7Dv', '2', 'inbox3', 'خرید در هر قیمتی', 'یبس', 'Dry0h3nVVb.png', 'nimanima54@gmail.com', 11),
-('فروش (ابطال)', '3', '4000', NULL, '11700', NULL, 'تایید شده', '1401/03/23', '1401/03/23', 'bnb1wwushdeatgdwz5nwlxfzsy8ll8cvdkjxv5aeue', NULL, 'inbox1', 'فروش در هر قیمتی', '-', 'lkYel8dZvA.png', 'nimanima54@gmail.com', 12);
 
 -- --------------------------------------------------------
 
