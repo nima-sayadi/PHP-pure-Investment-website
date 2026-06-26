@@ -6,4 +6,6 @@ A fully PHP PURE written website. One of my earliest projects back in 2021. It i
 
 It was built for crypto investments and statistics.
 
+**EDIT:** Nowadays with AI this repo may not be that valuable anymore, However, keep in mind that if you learn from scratch and build your own stuff, you can then become a senior developer that catches the mistakes of the AI, and can effectively fine-tune AI agents ;)
+
 enjoy!
